@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2021 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="150mm" height="50mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 15000 5000"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:white;stroke-width:1000;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil0 {fill:url(#id0);fill-rule:nonzero}
+   ]]>
+  </style>
+  <linearGradient id="id0" gradientUnits="userSpaceOnUse" x1="-603.18" y1="2462.37" x2="15600.23" y2="2462.37">
+   <stop offset="0" style="stop-opacity:1; stop-color:#FFDB6E"/>
+   <stop offset="1" style="stop-opacity:1; stop-color:#FFBC5E"/>
+  </linearGradient>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2445894287168">
+   <path class="fil0" d="M-603.21 2506.13c0,-4474.46 3627.27,-8101.73 8101.74,-8101.73l3722.41 0c2418.61,0 4379.32,1960.71 4379.32,4379.32l0 3722.41c0,4474.43 -3627.31,8101.74 -8101.73,8101.74l0 0c-4474.47,0 -8101.74,-3627.31 -8101.74,-8101.74l0 0z"/>
+   <g>
+    <path class="fil1 str0" d="M10390.04 2556.12l-1402.46 2429.12c-18.36,31.8 -49.88,50 -86.6,50l-2804.89 0c-36.72,0 -68.24,-18.2 -86.6,-50l-1402.46 -2429.12c-18.36,-31.8 -18.36,-68.2 0,-100l1402.46 -2429.11c18.36,-31.8 49.88,-50 86.6,-50l2804.89 0c36.72,0 68.24,18.2 86.6,50l1402.46 2429.11c18.36,31.8 18.36,68.2 0,100z"/>
+   </g>
+   <polygon class="fil1 str0" points="10303.44,2506.12 9602.21,3720.69 8900.98,4935.24 7498.53,4935.24 6096.09,4935.24 5394.86,3720.69 4693.63,2506.12 5394.86,1291.56 6096.09,77.01 7498.53,77.01 8900.98,77.01 9602.21,1291.56 "/>
+   <g>
+    <path class="fil1 str0" d="M12612.97 2506.13l-1373.59 -2379.11c-27.54,-47.7 -11.1,-109.06 36.6,-136.6 47.7,-27.54 109.06,-11.1 136.6,36.6l1402.46 2429.11c18.36,31.8 18.36,68.2 0,100l-1402.46 2429.12c-27.54,47.7 -88.9,64.14 -136.6,36.6 -47.7,-27.54 -64.14,-88.9 -36.6,-136.6l1373.59 -2379.12zm-10228.87 0l1373.59 2379.12c27.54,47.7 11.1,109.06 -36.6,136.6 -47.7,27.54 -109.06,11.1 -136.6,-36.6l-1402.46 -2429.12c-18.36,-31.8 -18.36,-68.2 0,-100l1402.46 -2429.11c27.54,-47.7 88.9,-64.14 136.6,-36.6 47.7,27.54 64.14,88.9 36.6,136.6l-1373.59 2379.11z"/>
+   </g>
+   <path class="fil1 str0" d="M11325.98 77.02l701.23 1214.55 701.23 1214.56 -701.23 1214.57 -701.23 1214.55m-7654.89 0l-701.23 -1214.55 -701.23 -1214.57 701.23 -1214.56 701.23 -1214.55"/>
+  </g>
+ </g>
+</svg>
