@@ -1,919 +1,1033 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+        <!-- - favicon -->
+        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+        <!-- - custom css link -->
+        <link rel="stylesheet" href="./assets/css/style.css">
+
+        <!-- - google font link -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
+            rel="stylesheet">
+    </head>
+
+    <body id="top" class="dark_theme">
+
+        <!-- - #HEADER -->
+
+        <header class="header" data-header="data-header">
+            <div class="container">
+
+                <h1 class="h1 logo">
+                    <a href="#">IOI<span>.</span></a>
+                </h1>
+
+                <div class="navbar-actions">
+
+                    <select name="language" id="lang">
+                        <option value="en">En</option>
+                        <option value="pt-BR" selected="selected">Pt</option>
+                    </select>
+
+                    <button
+                        class="theme-btn"
+                        aria-label="Change Theme"
+                        title="Change Theme"
+                        data-theme-btn="data-theme-btn">
+                        <span class="icon"></span>
+                    </button>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap"
-    rel="stylesheet">
-</head>
-
-<body id="top" class="dark_theme">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-    <div class="container">
-
-      <h1 class="h1 logo">
-        <a href="#">IOI<span>.</span></a>
-      </h1>
-
-      <div class="navbar-actions">
-
-        <select name="language" id="lang">
-          <option value="en">En</option>
-          <option value="pt">Pt</option>
-        </select>
-
-        <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-          <span class="icon"></span>
-        </button>
-
-      </div>
-
-      <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-        <span class="one"></span>
-        <span class="two"></span>
-        <span class="three"></span>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-
-          <li>
-            <a href="#home" class="navbar-link">Home.</a>
-          </li>
-
-          <li>
-            <a href="#about" class="navbar-link">About.</a>
-          </li>
-
-          <li>
-            <a href="#skills" class="navbar-link">Skills.</a>
-          </li>
-
-          <li>
-            <a href="#portfolio" class="navbar-link">Portfolio.</a>
-          </li>
-
-          <li>
-            <a href="#contact" class="navbar-link">Contact.</a>
-          </li>
-
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-
-
-
-
-  <main>
-    <article class="container">
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-
-        <figure class="hero-banner">
-
-          <picture>
-            <source srcset="./assets/images/hero-banner.png" media="(min-width: 768px)">
-            <source srcset="./assets/images/hero-banner-md.png" media="(min-width: 500px)">
-            <img src="./assets/images/hero-banner-sm.png" alt="A man in a blue shirt with a happy expression"
-              class="w-100">
-          </picture>
-
-        </figure>
-
-        <div class="hero-content">
-
-          <h2 class="h2 hero-title">Inside of Insights</h2>
-
-          <a href="#contact" class="btn btn-primary">Get in touch</a>
-
-        </div>
-
-        <ul class="hero-social-list">
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-
-              <div class="tooltip">Facebook</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-
-              <div class="tooltip">Twitter</div>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="hero-social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-
-              <div class="tooltip">Linkedin</div>
-            </a>
-          </li>
-
-        </ul>
-
-        <a href="#stats" class="scroll-down">Scroll</a>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #STATS
-      -->
-
-      <section class="stats" id="stats">
-        <ul class="stats-list">
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                30+ <strong>Years of Experience</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                50+ <strong>Completed Projects</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="stats-card">
-
-              <div class="card-icon">
-                <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
-              </div>
-
-              <h2 class="h2 card-title">
-                25+ <strong>Happy Clients</strong>
-              </h2>
-
-              <ion-icon name="chevron-forward-outline"></ion-icon>
-
-            </a>
-          </li>
-
-        </ul>
-      </section>
-
-
-
-
-
-      <!-- 
-        - #ABOUT
-      -->
-
-      <section class="about" id="about">
-
-        <figure class="about-banner">
-          <img src="./assets/images/about-banner.png" alt="A man in a alice blue shirt with a thinking expression"
-            class="w-100">
-        </figure>
-
-        <div class="about-content section-content">
-
-          <p class="section-subtitle">About</p>
-
-          <h2 class="h3 section-title">Need an interactive dashboard? We can help you!</h2>
-
-          <p class="section-text">
-            Hi! We are Inside of insights, a company specializing in data analysis and information visualization. Our mission is to create dashboards and spreadsheets that meet our customers' needs and are easy to use and understand. We are passionate about turning data into insights using creative and innovative solutions. We are always updating and learning new tools and concepts. We have experience in several projects and segments.
-
-            We serve small to large companies that need customized and efficient solutions to manage their data and make formal decisions. We stand out for our quality, agility, flexibility and transparency. We value trust, collaboration, ethics and customer satisfaction.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-secondary">Hire me</button>
-
-            <!-- <button class="btn btn-primary">Download cv</button>-->
-      </div>
-
-        </div>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #SKILLS
-      -->
-
-      <section class="skills" id="skills">
-
-        <div class="skills-content section-content">
-
-          <p class="section-subtitle">Skills</p>
-
-          <h2 class="h3 section-title">What are the skills and tools we use?</h2>
-
-          <p class="section-text">
-            Develop simple and intuitive dashboards that help users to do things with less effort and time with these technologies.
-          </p>
-
-          <div class="skills-toggle" data-toggle-box>
-            <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-            <button class="toggle-btn" data-toggle-btn>Tools</button>
-          </div>
-
-        </div>
-
-        <div class="skills-box" data-skills-box>
-
-          <ul class="skills-list">
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">mySql</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO0.png" alt="HTML5 logo">
                 </div>
-              </div>
-            </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">JavaScript</div>
+                <button
+                    class="nav-toggle-btn"
+                    aria-label="Toggle Menu"
+                    title="Toggle Menu"
+                    data-nav-toggle-btn="data-nav-toggle-btn">
+                    <span class="one"></span>
+                    <span class="two"></span>
+                    <span class="three"></span>
+                </button>
 
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO1.png" alt="CSS3 logo">
-                </div>
-              </div>
-            </li>
+                <nav class="navbar" data-navbar="data-navbar">
+                    <ul class="navbar-list">
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Python</div>
+                        <li>
+                            <a href="#home" class="navbar-link" lang="en">Home.</a>
+                            <a href="#home" class="navbar-link" lang="pt-BR">Início.</a>
+                        </li>
 
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO2.png" alt="JavaScript logo">
-                </div>
-              </div>
-            </li>
+                        <li>
+                            <a href="#about" class="navbar-link" lang="en">About.</a>
+                            <a href="#about" class="navbar-link" lang="pt-BR">Sobre.</a>
+                        </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">R</div>
+                        <li>
+                            <a href="#skills" class="navbar-link">Skills.</a>
+                        </li>
 
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO3.png" alt="TypeScript logo">
-                </div>
-              </div>
-            </li>
+                        <li>
+                            <a href="#portfolio" class="navbar-link">Portfolio.</a>
+                        </li>
 
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">jQuery</div>
+                        <li>
+                            <a href="#contact" class="navbar-link" lang="en">Contact.</a>
+                            <a href="#contact" class="navbar-link" lang="pt-BR">Contato.</a>
+                        </li>
 
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO4.png" alt="jQuery logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">HTML5</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO5.png" alt="Bootstrap logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">CSS3</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO6.png" alt="Angular logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">PHP</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO7.png" alt="React logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">PowerShell</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO8.png" alt="Vue logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Firebase</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO9.png" alt="Firebase logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Report</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO10.png" alt="PugJs logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Graph</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/SLOGO11.png" alt="SASS logo">
-                </div>
-              </div>
-            </li>
-
-          </ul>
-
-          <ul class="tools-list">
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Power BI</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO0.png" alt="Ajax logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Power Apps</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO1.png" alt="Gulp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Power Automate</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO2.png" alt="Webpack logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Excel</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO3.png" alt="Git logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Forms</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO4.png" alt="Npm logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Azure</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO5.png" alt="Command Line logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Sharepoint</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO6.png" alt="VS Code logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">VS Code</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO7.png" alt="Trello logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Google Planilhas</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO8.png" alt="ClickUp logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Figma</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO9.png" alt="Slack logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Trello</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO10.png" alt="Photoshop logo">
-                </div>
-              </div>
-            </li>
-
-            <li>
-              <div class="skill-card">
-                <div class="tooltip">Git</div>
-
-                <div class="card-icon">
-                  <img src="./assets/images/TLOGO11.png" alt="Adobe XD logo">
-                </div>
-              </div>
-            </li>
-
-          </ul>
-
-        </div>
-
-      </section>
-
-
-
-
-
-      <!-- 
-        - #PROJECTS
-      --> 
-
-      <section class="project" id="portfolio">
-
-        <ul class="project-list">
-
-          <li>
-            <div class="project-content section-content">
-
-              <p class="section-subtitle">Our Works</p>
-
-              <h2 class="h3 section-title">See our works that will surprise you!</h2>
-
-              <p class="section-text">Develop dashboards of the best quality that serve the long term. Well documented, clean, easy and elegant interface helps any non-technical customer.
-              </p>
+                    </ul>
+                </nav>
 
             </div>
-          </li>
+        </header>
 
-          <li>
-            <a href="#" class="project-card">
+        <main>
+            <article class="container">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-1.png" class="w-100" alt="A macintosh on a yellow background.">
-              </figure>
+                <!-- - #HERO -->
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 01</h3>
+                <section class="hero" id="home">
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <figure class="hero-banner">
 
-            </a>
-          </li>
+                        <picture>
+                            <source srcset="./assets/images/hero-banner.svg" media="(min-width: 768px)">
+                            <source srcset="./assets/images/hero-banner-md.svg" media="(min-width: 500px)">
+                            <img src="./assets/images/hero-banner-sm.svg" alt="Logo" class="w-100">
+                        </picture>
 
-          <li>
-            <a href="#" class="project-card">
+                    </figure>
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-2.png" class="w-100" alt="On a Blue background, a Wacom and a mouse.">
-              </figure>
+                    <div class="hero-content">
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 02</h3>
+                        <h2 class="h2 hero-title">Inside of Insights</h2>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                        <a href="#contact" class="btn btn-primary" lang="en">Get in touch</a>
+                        <a href="#contact" class="btn btn-primary" lang="pt-BR">Entre em contato</a>
 
-            </a>
-          </li>
+                    </div>
 
-          <li>
-            <a href="#" class="project-card">
+                    <ul class="hero-social-list">
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-3.png" class="w-100"
-                  alt="A Cassette tape on a mellow apricot background.">
-              </figure>
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 03</h3>
+                                <div class="tooltip">Facebook</div>
+                            </a>
+                        </li>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
 
-            </a>
-          </li>
+                                <div class="tooltip">Twitter</div>
+                            </a>
+                        </li>
 
-          <li>
-            <a href="#" class="project-card">
+                        <li>
+                            <a href="#" class="hero-social-link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-4.png" class="w-100"
-                  alt="Blue digital watch on a dark liver background.">
-              </figure>
+                                <div class="tooltip">Linkedin</div>
+                            </a>
+                        </li>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 04</h3>
+                    </ul>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                    <a href="#stats" class="scroll-down">Scroll</a>
 
-            </a>
-          </li>
+                </section>
 
-          <li>
-            <a href="#" class="project-card">
+                <!-- - #STATS -->
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-5.png" class="w-100"
-                  alt="On a dark liver background, Airport luggage car carrying a luggage.">
-              </figure>
+                <section class="stats" id="stats">
+                    <ul class="stats-list">
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 05</h3>
+                        <li>
+                            <a href="#" class="stats-card">
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                                <div class="card-icon">
+                                    <img src="./assets/images/stats-card_icon-1.png" alt="Badge icon">
+                                </div>
 
-            </a>
-          </li>
+                                <h2 class="h2 card-title" lang="en">
+                                    30+
+                                    <strong>Years of Experience</strong>
+                                </h2>
 
-          <li>
-            <a href="#" class="project-card">
+                                <h2 class="h2 card-title" lang="pt-BR">
+                                    30+
+                                    <strong>Anos de Experiência</strong>
+                                </h2>
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-6.png" class="w-100"
-                  alt="On a yellow background, a digital watch and a glass.">
-              </figure>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 06</h3>
+                            </a>
+                        </li>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                        <li>
+                            <a href="#" class="stats-card">
 
-            </a>
-          </li>
+                                <div class="card-icon">
+                                    <img src="./assets/images/stats-card_icon-2.png" alt="Checkmark icon">
+                                </div>
 
-          <li>
-            <a href="#" class="project-card">
+                                <h2 class="h2 card-title" lang="en">
+                                    50+
+                                    <strong>Completed Projects</strong>
+                                </h2>
 
-              <figure class="card-banner">
-                <img src="./assets/images/project-7.png" class="w-100"
-                  alt="A fujifilm instant camera on a dark electric blue background.">
-              </figure>
+                                <h2 class="h2 card-title" lang="pt-BR">
+                                    50+
+                                    <strong>Projetos Finalizados</strong>
+                                </h2>
 
-              <div class="card-content">
-                <h3 class="h4 card-title">Lorem Ipsum Dolor 07</h3>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
 
-                <time class="publish-date" datetime="2022-04">April 2022</time>
-              </div>
+                            </a>
+                        </li>
 
-            </a>
-          </li>
+                        <li>
+                            <a href="#" class="stats-card">
 
-          <li>
-            <button class="load-more">Load more work</button>
-          </li>
+                                <div class="card-icon">
+                                    <img src="./assets/images/stats-card_icon-3.png" alt="Peoples rating icon">
+                                </div>
 
-        </ul>
+                                <h2 class="h2 card-title" lang="en">
+                                    25+
+                                    <strong>Happy Clients</strong>
+                                </h2>
 
-      </section>
+                                <h2 class="h2 card-title" lang="pt-BR">
+                                    25+
+                                    <strong>Clientes Satisfeitos</strong>
+                                </h2>
 
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
 
+                            </a>
+                        </li>
 
+                    </ul>
+                </section>
 
+                <!-- - #ABOUT -->
 
-      <!-- 
-        - #CONTACT
-      -->
+                <section class="about" id="about">
 
-      <section class="contact" id="contact">
+                    <figure class="about-banner">
+                        <img
+                            src="./assets/images/about-banner.png"
+                            alt="A man in a alice blue shirt with a thinking expression"
+                            class="w-100">
+                    </figure>
 
-        <div class="contact-content section-content">
+                    <div class="about-content section-content">
 
-          <p class="section-subtitle">Contact</p>
+                        <p class="section-subtitle" lang="en">About</p>
+                        <p class="section-subtitle" lang="pt-BR">Sobre</p>
 
-          <h2 class="h3 section-title">Have You Any Project? Please Drop a Message</h2>
+                        <h2 class="h3 section-title" lang="en">Need an interactive dashboard? We can help you!</h2>
+                        <h2 class="h3 section-title" lang="pt-BR">Precisa de um relatório interativo? Nós podemos ajudar você!</h2>
 
-          <p class="section-text">
-            Get in touch and tell us how we can help. Fill in the form and we will contact you as soon as possible.</p>
+                        <p class="section-text" lang="en">
+                            Hi! We are Inside of insights, a company specializing in data analysis and
+                            information visualization. Our mission is to create dashboards and spreadsheets
+                            that meet our customers' needs and are easy to use and understand. We are
+                            passionate about turning data into insights using creative and innovative
+                            solutions. We are always updating and learning new tools and concepts. We have
+                            experience in several projects and segments. We serve small to large companies
+                            that need customized and efficient solutions to manage their data and make
+                            formal decisions. We stand out for our quality, agility, flexibility and
+                            transparency. We value trust, collaboration, ethics and customer satisfaction.
+                        </p>
 
-          <ul class="contact-list">
+                        <p class="section-text" lang="pt-BR">
+                            Oi! Somos a Inside of insights, empresa especializada em análise de dados e
+                            visualização de informações. Nossa missão é criar dashboards e planilhas que
+                            atendam às necessidades de nossos clientes e sejam fáceis de usar e entender.
+                            Somos apaixonados por transformar dados em insights usando soluções criativas e
+                            inovadoras. Estamos sempre nos atualizando e aprendendo novas ferramentas e
+                            conceitos. 
+                            <br><br/> 
+                            Temos experiência em diversos projetos e segmentos. Atendemos
+                            empresas de pequeno a grande porte que precisam de soluções customizadas e
+                            eficientes para gerenciar seus dados e tomar decisões formais. Nos destacamos
+                            pela qualidade, agilidade, flexibilidade e transparência. Valorizamos a
+                            confiança, colaboração, ética e satisfação do cliente.
+                        </p>
 
-            <li class="contact-list-item">
+                        <div class="btn-group">
+                            <button class="btn btn-secondary" lang="en">Hire me</button>
+                            <button class="btn btn-secondary" lang="pt-BR">Solicite uma Proposta</button>
+
+                            <!-- <button class="btn btn-primary">Download cv</button>-->
+                        </div>
+
+                    </div>
 
-              <div class="contact-item-icon">
-                <ion-icon name="location-outline"></ion-icon>
-              </div>
+                </section>
+
+                <!-- - #SKILLS -->
+
+                <section class="skills" id="skills">
+
+                    <div class="skills-content section-content">
+
+                        <p class="section-subtitle">Skills</p>
+
+                        <h2 class="h3 section-title" lang="en">What are the skills and tools we use?</h2>
+                        <h2 class="h3 section-title" lang="pt-BR">Quais são as skills e ferramentas que usamos?</h2>
+
+                        <p class="section-text" lang="en">
+                            Develop simple and intuitive dashboards that help users to do things with less
+                            effort and time with these technologies.
+                        </p>
+
+                        <p class="section-text" lang="pt-BR">
+                          Desenvolvemos painéis simples e intuitivos que ajudam os usuários a fazer as
+                            coisas com menos esforço e tempo com essas tecnologias.
+                        </p>
+
+                        <div class="skills-toggle" data-toggle-box="data-toggle-box">
+                            <button class="toggle-btn active" data-toggle-btn="data-toggle-btn">Skills</button>
+
+                            <button class="toggle-btn" data-toggle-btn="data-toggle-btn">Tools</button>
+                        </div>
+
+                    </div>
+
+                    <div class="skills-box" data-skills-box="data-skills-box">
+
+                        <ul class="skills-list">
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">mySql</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO0.png" alt="HTML5 logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">JavaScript</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO1.png" alt="CSS3 logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Python</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO2.png" alt="JavaScript logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">R</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO3.png" alt="TypeScript logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">jQuery</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO4.png" alt="jQuery logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">HTML5</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO5.png" alt="Bootstrap logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">CSS3</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO6.png" alt="Angular logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">PHP</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO7.png" alt="React logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">PowerShell</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO8.png" alt="Vue logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Firebase</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO9.png" alt="Firebase logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Report</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO10.png" alt="PugJs logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Graph</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/SLOGO11.png" alt="SASS logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <ul class="tools-list">
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Power BI</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO0.png" alt="Ajax logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Power Apps</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO1.png" alt="Gulp logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Power Automate</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO2.png" alt="Webpack logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Excel</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO3.png" alt="Git logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Forms</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO4.png" alt="Npm logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Azure</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO5.png" alt="Command Line logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Sharepoint</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO6.png" alt="VS Code logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">VS Code</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO7.png" alt="Trello logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Google Sheets</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO8.png" alt="ClickUp logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Figma</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO9.png" alt="Slack logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Trello</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO10.png" alt="Photoshop logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="skill-card">
+                                    <div class="tooltip">Git</div>
+
+                                    <div class="card-icon">
+                                        <img src="./assets/images/TLOGO11.png" alt="Adobe XD logo">
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </section>
+
+                <!-- - #PROJECTS -->
+
+                <section class="project" id="portfolio">
+
+                    <ul class="project-list">
+
+                        <li>
+                            <div class="project-content section-content">
+
+                                <p class="section-subtitle" lang="en">Our Works</p>
+                                <p class="section-subtitle" lang="pt-BR">Nossos Trabalhos</p>
+
+                                <h2 class="h3 section-title" lang="en">See our works that will surprise you!</h2>
+                                <h2 class="h3 section-title" lang="pt-BR">Veja os nossos trabalhos que irão te surpreender!</h2>
+
+
+                                <p class="section-text" lang="en">Develop dashboards of the best quality that serve the
+                                    long term. Well documented, clean, easy and elegant interface helps any
+                                    non-technical customer.
+                                </p>
+                                <p class="section-text" lang="pt-BR">Desenvolvemos painéis e dashbords da melhor qualidade
+                                  que atendam a longo prazo. Interface bem documentada, limpa, fácil e elegante
+                                  ajuda qualquer cliente que não tem conhecimento técnico.
+                              </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <a href="#" class="project-card">
+
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-1.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Sky</h3>
+
+                                    <time class="publish-date" datetime="2022-04">April 2017</time>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="project-card">
+
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-2.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Pirelli</h3>
+
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="project-card">
+
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-3.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
+
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Getnet</h3>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Address:</h3>
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
 
-                <address class="contact-info">
-                  Brazil
-                </address>
-              </div>
+                            </a>
+                        </li>
 
-            </li>
+                        <li>
+                            <a href="#" class="project-card">
+
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-4.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
 
-            <li class="contact-list-item">
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Liberty</h3>
 
-              <div class="contact-item-icon">
-                <ion-icon name="call-outline"></ion-icon>
-              </div>
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Phone:</h3>
+                            </a>
+                        </li>
 
-                <a href="tel:+5524935000979" class="contact-info">+55 (24) 93500-0979</a>
+                        <li>
+                            <a href="#" class="project-card">
 
-                <a href="tel:+5524999838836" class="contact-info">+55 (24) 99983-8836</a>
-              </div>
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-5.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
 
-            </li>
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Banco Mercantil</h3>
 
-            <li class="contact-list-item">
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
 
-              <div class="contact-item-icon">
-                <ion-icon name="mail-outline"></ion-icon>
-              </div>
+                            </a>
+                        </li>
 
-              <div class="wrapper">
-                <h3 class="h4 contact-item-title">Email:</h3>
+                        <li>
+                            <a href="#" class="project-card">
 
-                <a href="mailto:info@ioi.com" class="contact-info">info@ioi.com</a>
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-6.png"
+                                        class="w-100"
+                                        alt="Dashboard">
+                                </figure>
 
-                <a href="mailto:support@ioi.com" class="contact-info">support@ioi.com</a>
-              </div>
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Smartfit</h3>
 
-            </li>
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
 
-            <li>
-              <ul class="contac-social-list">
+                            </a>
+                        </li>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Facebook</div>
+                        <li>
+                            <a href="#" class="project-card">
 
-                    <ion-icon name="logo-facebook"></ion-icon>
-                  </a>
-                </li>
+                                <figure class="card-banner">
+                                    <img
+                                        src="./assets/images/project-7.png"
+                                        class="w-100"
+                                        alt="Paginated Report">
+                                </figure>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Twitter</div>
+                                <div class="card-content">
+                                    <h3 class="h4 card-title">Fácil Assist</h3>
 
-                    <ion-icon name="logo-twitter"></ion-icon>
-                  </a>
-                </li>
+                                    <time class="publish-date" datetime="2022-04">April 2022</time>
+                                </div>
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Linkedin</div>
+                            </a>
+                        </li>
 
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                  </a>
-                </li>
+                        <!--<li>
+                            <button class="load-more">Load more work</button>
+                        </li> -->
 
-                <li>
-                  <a href="#" class="contact-social-link">
-                    <div class="tooltip">Youtube</div>
+                    </ul>
 
-                    <ion-icon name="logo-youtube"></ion-icon>
-                  </a>
-                </li>
+                </section>
 
-              </ul>
-            </li>
+                <!-- - #CONTACT -->
 
-          </ul>
+                <section class="contact" id="contact">
 
-        </div>
+                    <div class="contact-content section-content">
 
-        <form action="" class="contact-form">
+                        <p class="section-subtitle" lang="en">Contact</p>
+                        <p class="section-subtitle" lang="pt-BR">Contato</p>
 
-          <div class="form-wrapper">
+                        <h2 class="h3 section-title" lang="en">Have You Any Project? Please Drop a Message</h2>
+                        <h2 class="h3 section-title" lang="pt-BR">Você tem precisa de projeto? Por favor, deixe uma mensagem</h2>
 
-            <label for="name" class="form-label">Name</label>
 
-            <div class="input-wrapper">
+                        <p class="section-text" lang="en">
+                            Get in touch and tell us how we can help. Fill in the form and we will contact
+                            you as soon as possible.</p>
+                            <p class="section-text" lang="pt-BR">
+                              Entre em contato e nos diga como podemos ajudar. Preencha o formulário e
+                            entraremos em contato o mais breve possível.</p>
 
-              <input type="text" name="name" id="name" required placeholder="e.g John Doe" class="input-field">
 
-              <ion-icon name="person-circle"></ion-icon>
+                        <ul class="contact-list">
+
+                            <li class="contact-list-item">
+
+                                <div class="contact-item-icon">
+                                    <ion-icon name="location-outline"></ion-icon>
+                                </div>
+
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title" lang="en">Address:</h3>
+                                    <h3 class="h4 contact-item-title" lang="pt-BR">Endereço:</h3>
+
+                                    <address class="contact-info" lang="en">
+                                        Brazil
+                                    </address>
+
+                                    <address class="contact-info" lang="pt-BR">
+                                      Brasil
+                                  </address>
+                                </div>
+
+                            </li>
+
+                            <li class="contact-list-item">
+
+                                <div class="contact-item-icon">
+                                    <ion-icon name="call-outline"></ion-icon>
+                                </div>
+
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title" lang="en">Phone:</h3>
+                                    <h3 class="h4 contact-item-title" lang="pt-BR">Telefone:</h3>
+
+                                    <a href="tel:+5524935000979" class="contact-info">+55 (24) 93500-0979</a>
+
+                                    <a href="tel:+5524999838836" class="contact-info">+55 (24) 99983-8836</a>
+                                </div>
+
+                            </li>
+
+                            <li class="contact-list-item">
+
+                                <div class="contact-item-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </div>
+
+                                <div class="wrapper">
+                                    <h3 class="h4 contact-item-title">Email:</h3>
+
+                                    <a href="mailto:info@ioi.com" class="contact-info">info@ioi.com</a>
+
+                                    <a href="mailto:support@ioi.com" class="contact-info">support@ioi.com</a>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <ul class="contac-social-list">
+
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Whatsapp</div>
+
+                                            <ion-icon name="logo-whatsapp"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Twitter</div>
+
+                                            <ion-icon name="logo-twitter"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Linkedin</div>
+
+                                            <ion-icon name="logo-linkedin"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="contact-social-link">
+                                            <div class="tooltip">Facebook</div>
+
+                                            <ion-icon name="logo-facebook"></ion-icon>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                    <form action="" class="contact-form">
+
+                        <div class="form-wrapper">
+
+                            <label for="name" class="form-label" lang="en">Name</label>
+                            <label for="name" class="form-label" lang="pt-BR">Nome</label>
+
+                            <div class="input-wrapper" lang="en">
+
+                                <input
+                                    type="text"
+                                    name="name"
+                                    id="name"
+                                    required="required"
+                                    placeholder="e.g John Doe"
+                                    class="input-field">
+
+                                <ion-icon name="person-circle"></ion-icon>
+
+                            </div>
+
+                            <div class="input-wrapper" lang="pt-BR">
+
+                              <input
+                                  type="text"
+                                  name="name"
+                                  id="name"
+                                  required="required"
+                                  placeholder="John Doe"
+                                  class="input-field">
+
+                              <ion-icon name="person-circle"></ion-icon>
+
+                          </div>
+
+                        </div>
+
+                        <div class="form-wrapper">
+
+                            <label for="email" class="form-label">Email</label>
+
+                            <div class="input-wrapper">
+
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    required="required"
+                                    placeholder="johndoe@mail.com"
+                                    class="input-field">
+
+                                <ion-icon name="mail"></ion-icon>
+
+                            </div>
+
+                        </div>
+
+                        <div class="form-wrapper">
+
+                            <label for="phone" class="form-label" lang="en">Phone</label>
+                            <label for="phone" class="form-label" lang="pt-BR">Telefone</label>
+
+                            <div class="input-wrapper" lang="en">
+
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    id="phone"
+                                    required="required"
+                                    placeholder="Phone Number"
+                                    class="input-field">
+
+                                <ion-icon name="call"></ion-icon>
+
+                            </div>
+
+                            <div class="input-wrapper" lang="pt-BR">
+
+                              <input
+                                  type="tel"
+                                  name="phone"
+                                  id="phone"
+                                  required="required"
+                                  placeholder="Número do telefone"
+                                  class="input-field">
+
+                              <ion-icon name="call"></ion-icon>
+
+                          </div>
+
+
+                        </div>
+
+                        <div class="form-wrapper">
+
+                            <label for="message" class="form-label" lang="en">Message</label>
+                            <label for="message" class="form-label" lang="pt-BR">Mensagem</label>
+
+                            <div class="input-wrapper" lang="en">
+
+                                <textarea
+                                    name="message"
+                                    id="message"
+                                    required="required"
+                                    placeholder="Write message..."
+                                    class="input-field"></textarea>
+
+                                <ion-icon name="chatbubbles"></ion-icon>
+
+                            </div>
+
+                            <div class="input-wrapper" lang="pt-BR">
+
+                              <textarea
+                                  name="message"
+                                  id="message"
+                                  required="required"
+                                  placeholder="Escreva sua mensagem..."
+                                  class="input-field"></textarea>
+
+                              <ion-icon name="chatbubbles"></ion-icon>
+
+                          </div>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" lang="en">Send</button>
+                        <button type="submit" class="btn btn-primary" lang="pt-BR">Enviar</button>
+
+                    </form>
+
+                </section>
+
+            </article>
+        </main>
+
+        <!-- - #FOOTER -->
+
+        <footer class="footer">
+            <div class="container">
+
+                <p class="h1 logo">
+                    <a href="#">
+                        IOI<span>.</span>
+                    </a>
+                </p>
+
+                <p class="copyright">
+                    &copy; 2023
+                    <a href="#">Inside of Insights</a>. All rights reserved
+                </p>
 
             </div>
+        </footer>
 
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="email" class="form-label">Email</label>
-
-            <div class="input-wrapper">
-
-              <input type="email" name="email" id="email" required placeholder="e.g johndoe@mail.com"
-                class="input-field">
-
-              <ion-icon name="mail"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="phone" class="form-label">Phone</label>
-
-            <div class="input-wrapper">
-
-              <input type="tel" name="phone" id="phone" required placeholder="Phone Number" class="input-field">
-
-              <ion-icon name="call"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <div class="form-wrapper">
-
-            <label for="message" class="form-label">Message</label>
-
-            <div class="input-wrapper">
-
-              <textarea name="message" id="message" required placeholder="Write message..."
-                class="input-field"></textarea>
-
-              <ion-icon name="chatbubbles"></ion-icon>
-
-            </div>
-
-          </div>
-
-          <button type="submit" class="btn btn-primary">Send</button>
-
-        </form>
-
-      </section>
-
-    </article>
-  </main>
+        <!-- - #GO TO TOP -->
 
 
+        <a href="#top" class="go-top" data-go-top="data-go-top" title="Go to Top">
+          <ion-icon name="arrow-up"></ion-icon>
+      </a>
 
 
+        <!-- - custom js link -->
+        <script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - #FOOTER
-  -->
+        <!-- - ionicon link -->
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule="nomodule"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-  <footer class="footer">
-    <div class="container">
-
-      <p class="h1 logo">
-        <a href="#">
-          IOI<span>.</span>
-        </a>
-      </p>
-
-      <p class="copyright">
-        &copy; 2023 <a href="#">Inside of Insights</a>. All rights reserved
-      </p>
-
-    </div>
-  </footer>
-
-
-
-
-
-  <!-- 
-    - #GO TO TOP
-  -->
-
-  <a href="#top" class="go-top" data-go-top title="Go to Top">
-    <ion-icon name="arrow-up"></ion-icon>
-  </a>
-
-
-
-
-
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+    </body>
 
 </html>

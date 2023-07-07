@@ -31,7 +31,7 @@ window.addEventListener("scroll", function () {
 
 /**
  * navbar toggle
- */
+*/ 
 
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
@@ -43,6 +43,8 @@ navToggleBtn.addEventListener("click", function () {
   elemToggleFunc(document.body);
 
 });
+
+  
 
 
 
@@ -103,3 +105,30 @@ if (localStorage.getItem("theme") === "light_theme") {
   document.body.classList.remove("light_theme");
   document.body.classList.add("dark_theme");
 }
+
+
+/**
+ * Switch language
+ */
+
+function changeLang() {
+  var ddl = document.getElementById("lang");
+  var selectedValue = ddl.options[ddl.selectedIndex].value;
+  document.documentElement.setAttribute("lang", selectedValue);
+  var lang = selectedValue;
+  var elements = document.querySelectorAll("[lang]");
+  for (var i = 0; i < elements.length; i++) {
+    if (elements[i].getAttribute("lang") === lang) {
+      elements[i].style.display = "";
+    } else {
+      elements[i].style.display = "none";
+    }
+  }
+}
+
+var select = document.getElementById("lang");
+select.addEventListener("change", function() {
+  changeLang();
+});
+
+changeLang();
