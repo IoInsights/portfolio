@@ -191,52 +191,59 @@ select.addEventListener("change", function () {
 
 changeLang();
 
-
-
 //  função para enviar o email
 
-(function(){
+(function () {
     emailjs.init("n-uoSFberrPnSWpZm");
- })  ();
- 
- // Criar uma função para enviar o email
- 
- function enviarEmail() {
+})();
+
+
+function sendEmail() {
     // Pegar os dados do formulário
-    var nome = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var fone = document.getElementById("phone").value;
-    var mensagem = document.getElementById("message").value;
- 
-    // Validar se os campos estão preenchidos
-    if (nome == "" || email == "" || fone == "" || mensagem == "") {
-       alert("Por favor, preencha todos os campos.");
-       return;
-    }
- 
-    // Validar se o email é válido
-    var regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (!regex.test(email)) {
-       alert("Por favor, digite um email válido.");
-       return;
-    }
- 
-    // Criar um objeto com os dados do email
+
+    if ( document.getElementById("lang").value == "en" ) {
     var params = {
-       from_name: nome,
-       from_email: email,
-       from_tel: fone,
-       message: mensagem
-    };
+        from_name: document
+            .getElementById("name")
+            .value,
+        from_email: document
+            .getElementById("email")
+            .value,
+        from_tel: document
+            .getElementById("phone")
+            .value,
+        message: document
+            .getElementById("message")
+            .value
+    }
+}
+
+else {
  
+    var params = {
+        from_name: document
+            .getElementById("nome")
+            .value,
+        from_email: document
+            .getElementById("e-mail")
+            .value,
+        from_tel: document
+            .getElementById("telefone")
+            .value,
+        message: document
+            .getElementById("mensagem")
+            .value
+    }
+}
+   
     // Enviar o email usando o EmailJS
-    
-    emailjs.send("service_6he4v5i","template_ns25bmt", params)
-       .then(function(response) {
-          // Mostrar uma mensagem de sucesso se o email foi enviado
-          alert("Email enviado com sucesso!");
-       }, function(error) {
-          // Mostrar uma mensagem de erro se ocorreu algum problema
-          alert("Ocorreu um erro ao enviar o email: " + error);
-       });
- }
+
+    emailjs
+        .send("service_6he4v5i", "template_ns25bmt", params)
+        .then(function (response) {
+            alert("Email enviado com sucesso!");
+            reset("contact-form");
+        }, function (error) {
+            alert("Ocorreu um erro ao enviar o email: " + error);
+        });
+}

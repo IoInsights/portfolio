@@ -39,7 +39,7 @@
 
                     <select name="language" id="lang">
                         <option value="en">En</option>
-                        <option value="pt-BR" selected>Pt</option>
+                        <option value="pt-BR" selected="selected">Pt</option>
                     </select>
 
                     <button
@@ -301,8 +301,9 @@
                         </p>
 
                         <p class="section-text" lang="pt-BR">
-                            Desenvolvemos painéis simples e intuitivos que ajudam os usuários a obter insights que 
-                            impactam seus negócios com menos esforço e tempo, graças a essas tecnologias.
+                            Desenvolvemos painéis simples e intuitivos que ajudam os usuários a obter
+                            insights que impactam seus negócios com menos esforço e tempo, graças a essas
+                            tecnologias.
                         </p>
 
                         <div class="skills-toggle" data-toggle-box="data-toggle-box">
@@ -582,16 +583,16 @@
                                 <h2 class="h3 section-title" lang="en">See our works that will surprise you!</h2>
                                 <h2 class="h3 section-title" lang="pt-BR">Veja os nossos trabalhos que irão te surpreender!</h2>
 
-                                <p class="section-text" lang="en">Develop dashboards of the best quality that
-                                    serve the long term. 
+                                <p class="section-text" lang="en">Develop dashboards of the best quality that serve the long term.
                                     <br><br>
-                                    Well documented, clean, easy and elegant interface helps
-                                    any non-technical customer.
+                                    Well documented, clean, easy and elegant interface helps any non-technical
+                                    customer.
                                 </p>
-                                <p class="section-text" lang="pt-BR">Desenvolvemos painéis e dashboards da melhor
-                                    qualidade que atendam a longo prazo. 
+                                <p class="section-text" lang="pt-BR">Desenvolvemos painéis e dashboards da
+                                    melhor qualidade que atendam a longo prazo.
                                     <br><br>
-                                    Interface bem documentada, limpa, fácil, elegante que ajuda qualquer cliente que não tem conhecimento técnico.
+                                    Interface bem documentada, limpa, fácil, elegante que ajuda qualquer cliente que
+                                    não tem conhecimento técnico.
                                 </p>
 
                             </div>
@@ -738,8 +739,8 @@
                             Get in touch and tell us how we can help. Fill in the form and we will contact
                             you as soon as possible.</p>
                         <p class="section-text" lang="pt-BR">
-                          Sua opinião e suas demandas são importantes para nós. 
-                          Deixe seus contatos no formulário que retornaremos o mais breve possível.</p>
+                            Sua opinião e suas demandas são importantes para nós. Deixe seus contatos no
+                            formulário que retornaremos o mais breve possível.</p>
 
                         <ul class="contact-list">
 
@@ -867,7 +868,7 @@
                                 <input
                                     type="text"
                                     name="name"
-                                    id="name"
+                                    id="nome"
                                     required="required"
                                     placeholder="Nome Completo"
                                     class="input-field">
@@ -901,7 +902,7 @@
                                 <input
                                     type="email"
                                     name="email"
-                                    id="email"
+                                    id="e-mail"
                                     required="required"
                                     placeholder="Digite seu email"
                                     class="input-field">
@@ -909,7 +910,6 @@
                                 <ion-icon name="mail"></ion-icon>
 
                             </div>
-
 
                         </div>
 
@@ -937,7 +937,7 @@
                                 <input
                                     type="tel"
                                     name="phone"
-                                    id="phone"
+                                    id="telefone"
                                     required="required"
                                     placeholder="Digite seu telefone"
                                     class="input-field">
@@ -970,7 +970,7 @@
 
                                 <textarea
                                     name="message"
-                                    id="message"
+                                    id="mensagem"
                                     required="required"
                                     placeholder="Escreva sua mensagem..."
                                     class="input-field"></textarea>
@@ -981,8 +981,16 @@
 
                         </div>
 
-                        <button type="submit" class="btn btn-primary" lang="en" onclick="enviarEmail()">Send</button>
-                        <button type="submit" class="btn btn-primary" lang="pt-BR" onclick="enviarEmail()">Enviar</button>
+                        <button 
+                        type="submit" 
+                        class="btn btn-primary" 
+                        lang="en" 
+                        onclick="sendEmail()">Send</button>
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                            lang="pt-BR"
+                            onclick="sendEmail()">Enviar</button>
 
                     </form>
 
@@ -1017,10 +1025,10 @@
         </a>
 
         <!-- - custom js link -->
+        <script
+            type="text/javascript"
+            src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
         <script src="./assets/js/script.js"></script>
-        <script 
-    type="text/javascript" 
-    src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
         <!-- - ionicon link -->
         <script
