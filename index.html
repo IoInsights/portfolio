@@ -869,7 +869,7 @@
                                     name="name"
                                     id="name"
                                     required="required"
-                                    placeholder="John Doe"
+                                    placeholder="Nome Completo"
                                     class="input-field">
 
                                 <ion-icon name="person-circle"></ion-icon>
@@ -966,8 +966,8 @@
 
                         </div>
 
-                        <button type="submit" class="btn btn-primary" lang="en">Send</button>
-                        <button type="submit" class="btn btn-primary" lang="pt-BR">Enviar</button>
+                        <button type="submit" class="btn btn-primary" lang="en" onclick="enviarEmail()">Send</button>
+                        <button type="submit" class="btn btn-primary" lang="pt-BR" onclick="enviarEmail()">Enviar</button>
 
                     </form>
 
@@ -1003,6 +1003,9 @@
 
         <!-- - custom js link -->
         <script src="./assets/js/script.js"></script>
+        <script 
+    type="text/javascript" 
+    src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
 
         <!-- - ionicon link -->
         <script
