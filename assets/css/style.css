@@ -656,50 +656,14 @@ main { overflow-x: hidden; }
 
 
 /**
- * #clients 
+ * #Customer 
  */
 
- .clients {
-  margin-bottom: 15px;
-}
+ .customer { padding-block: var(--section-padding); }
 
-/*
-.clients-list {
-  display: flex;
-  align-items: center;
-  width: 100vw;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 15px;
-  margin: 0 -15px;
-  padding: 25px;
-  scroll-behavior: smooth;
-  overscroll-behavior-inline: contain;
-  scroll-snap-type: inline mandatory;
-  scroll-padding-inline: 25px;
-  
- 
-}
+ .customer-content { margin-bottom: 25px; }
 
-.clients-container { 
-  display: flex; 
-  flex-wrap: nowrap;
-  will-change: transform; 
-  animation: scroll-list 10s linear infinite}
-
-
-  @keyframes scroll-list {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-
-*/
-
-.clients-list {
+ .customer-list {
   display: inline-flex;
   align-items: center;
   height: max-content; 
@@ -732,18 +696,18 @@ main { overflow-x: hidden; }
 }
 
 
-.clients-item {
+.customer-item {
   min-width: 0%;
   scroll-snap-align: start;
 }
 
-.clients-item img {
+.customer-item img {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover {
+.customer-item img:hover {
   filter: grayscale(0);
 }
 
