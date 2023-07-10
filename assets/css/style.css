@@ -717,26 +717,19 @@ main { overflow-x: hidden; }
   display: flex;  
   flex-wrap: nowrap;
   will-change: transform; 
-  animation: scroll-list 40s linear infinite; /* Adicionei animation-direction */
+  animation: scroll-list 40s linear infinite;
   animation-delay: 1s;
 
 } 
 
-@keyframes scroll-list { /* Adicionei @keyframes */
+@keyframes scroll-list { 
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
-
-
- 
-.clients-item {
-  scroll-snap-align: start; /* adicione esta linha */
-}
-
 
 
 .clients-item {
